@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis Plantillas Web</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 1200px;
+        }
+        
+        .header {
+            text-align: center;
+            color: white;
+            margin-bottom: 50px;
+        }
+        
+        .header h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .header p {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+        
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+        
+        .card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+        }
+        
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.4);
+        }
+        
+        .card-image {
+            width: 100%;
+            height: 200px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 3em;
+        }
+        
+        .card-content {
+            padding: 20px;
+        }
+        
+        .card-title {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+            color: #333;
+        }
+        
+        .card-description {
+            color: #666;
+            margin-bottom: 15px;
+            font-size: 0.95em;
+        }
+        
+        .card-link {
+            display: inline-block;
+            background: #667eea;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background 0.3s ease;
+        }
+        
+        .card-link:hover {
+            background: #764ba2;
+        }
+        
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2em;
+            }
+            
+            .grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🌐 Mis Plantillas Web</h1>
+            <p>Selecciona una plantilla para ver el proyecto</p>
+        </div>
+        
+        <div class="grid">
+            <!-- Actualiza estos datos con tu información -->
+            <div class="card">
+                <div class="card-image">🎨</div>
+                <div class="card-content">
+                    <h2 class="card-title">Plantilla 1</h2>
+                    <p class="card-description">Descripción de tu primera plantilla web</p>
+                    <a href="./carpeta1/" class="card-link">Ver Proyecto →</a>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="card-image">💼</div>
+                <div class="card-content">
+                    <h2 class="card-title">Plantilla 2</h2>
+                    <p class="card-description">Descripción de tu segunda plantilla web</p>
+                    <a href="./carpeta2/" class="card-link">Ver Proyecto →</a>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="card-image">🚀</div>
+                <div class="card-content">
+                    <h2 class="card-title">Plantilla 3</h2>
+                    <p class="card-description">Descripción de tu tercera plantilla web</p>
+                    <a href="./carpeta3/" class="card-link">Ver Proyecto →</a>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="card-image">⭐</div>
+                <div class="card-content">
+                    <h2 class="card-title">Plantilla 4</h2>
+                    <p class="card-description">Descripción de tu cuarta plantilla web</p>
+                    <a href="./carpeta4/" class="card-link">Ver Proyecto →</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
