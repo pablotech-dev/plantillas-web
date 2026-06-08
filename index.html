@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mis Plantillas Web</title>
+    <title>Mis Plantillas Web - PabloTech Dev</title>
     <style>
         * {
             margin: 0;
@@ -56,6 +56,9 @@
             box-shadow: 0 10px 30px rgba(0,0,0,0.3);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
             cursor: pointer;
+            text-decoration: none;
+            color: inherit;
+            display: block;
         }
         
         .card:hover {
@@ -74,6 +77,18 @@
             font-size: 3em;
         }
         
+        .card-image.urgencias {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+        }
+        
+        .card-image.salud {
+            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+        }
+        
+        .card-image.hosteleria {
+            background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
+        }
+        
         .card-content {
             padding: 20px;
         }
@@ -90,6 +105,12 @@
             font-size: 0.95em;
         }
         
+        .card-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
         .card-link {
             display: inline-block;
             background: #667eea;
@@ -100,7 +121,7 @@
             transition: background 0.3s ease;
         }
         
-        .card-link:hover {
+        .card:hover .card-link {
             background: #764ba2;
         }
         
@@ -123,42 +144,53 @@
         </div>
         
         <div class="grid">
-            <!-- Actualiza estos datos con tu información -->
-            <div class="card">
+            <!-- Plantilla 1 -->
+            <a href="./PLANTILLAS/plantilla%201/" class="card">
                 <div class="card-image">🎨</div>
                 <div class="card-content">
                     <h2 class="card-title">Plantilla 1</h2>
-                    <p class="card-description">Descripción de tu primera plantilla web</p>
-                    <a href="./carpeta1/" class="card-link">Ver Proyecto →</a>
+                    <p class="card-description">Tu primera plantilla web profesional</p>
+                    <div class="card-footer">
+                        <span class="card-link">Ver Proyecto →</span>
+                    </div>
                 </div>
-            </div>
+            </a>
             
-            <div class="card">
-                <div class="card-image">💼</div>
+            <!-- Plantilla Salud -->
+            <a href="./PLANTILLAS/plantilla%20salud/" class="card">
+                <div class="card-image salud">⚕️</div>
                 <div class="card-content">
-                    <h2 class="card-title">Plantilla 2</h2>
-                    <p class="card-description">Descripción de tu segunda plantilla web</p>
-                    <a href="./carpeta2/" class="card-link">Ver Proyecto →</a>
+                    <h2 class="card-title">Plantilla Salud</h2>
+                    <p class="card-description">Diseño especializado para sector salud</p>
+                    <div class="card-footer">
+                        <span class="card-link">Ver Proyecto →</span>
+                    </div>
                 </div>
-            </div>
+            </a>
             
-            <div class="card">
-                <div class="card-image">🚀</div>
+            <!-- Plantilla Hostelería -->
+            <a href="./PLANTILLAS/plantilla%20hosteler%C3%ADa/" class="card">
+                <div class="card-image hosteleria">🍽️</div>
                 <div class="card-content">
-                    <h2 class="card-title">Plantilla 3</h2>
-                    <p class="card-description">Descripción de tu tercera plantilla web</p>
-                    <a href="./carpeta3/" class="card-link">Ver Proyecto →</a>
+                    <h2 class="card-title">Plantilla Hostelería</h2>
+                    <p class="card-description">Perfecta para restaurantes y hoteles</p>
+                    <div class="card-footer">
+                        <span class="card-link">Ver Proyecto →</span>
+                    </div>
                 </div>
-            </div>
+            </a>
             
-            <div class="card">
-                <div class="card-image">⭐</div>
+            <!-- Plantilla Urgencias -->
+            <a href="./PLANTILLAS/Plantilla%20urgencias/" class="card">
+                <div class="card-image urgencias">🚑</div>
                 <div class="card-content">
-                    <h2 class="card-title">Plantilla 4</h2>
-                    <p class="card-description">Descripción de tu cuarta plantilla web</p>
-                    <a href="./carpeta4/" class="card-link">Ver Proyecto →</a>
+                    <h2 class="card-title">Plantilla Urgencias</h2>
+                    <p class="card-description">Diseño para servicios de emergencia</p>
+                    <div class="card-footer">
+                        <span class="card-link">Ver Proyecto →</span>
+                    </div>
                 </div>
-            </div>
+            </a>
         </div>
     </div>
 </body>
